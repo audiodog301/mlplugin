@@ -1,0 +1,15 @@
+[package]
+name = "ml"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+baseplug = { git = "https://github.com/BillyDM/baseplug.git", rev = "6687126ed487d2045c13e45ce2ba0af770eafe2a" }
+serde = { version = "1.0", features = ["derive"] }
+neuroflow = "0.1.3"
+
+[lib]
+name = "ml"
+crate-type = ["cdylib"]
